@@ -1,10 +1,4 @@
-import { getWritable } from "workflow";
 import { vangrexAgent } from "./agents/vangrex.agent";
-import {
-  createModelCallToUIChunkTransform,
-  type ModelCallStreamPart,
-} from "@ai-sdk/workflow";
-import { createUIMessageStreamResponse } from "ai";
 
 async function execute(query: string) {
   "use workflow";
@@ -14,26 +8,20 @@ async function execute(query: string) {
 
   return {
     response: result.text,
+    toolUsage: result.toolResults,
+    tokenUsage: result.usage.inputTokens,
   };
 }
 
 async function main() {
-  const prompt = `Open the following apps with shortcuts:
-  1. Notepad
-2. Calculator
-3. File Explorer
-4. Task Manager
-5. Command Prompt
-6. Windows PowerShell
-7. Control Panel
-8. Settings
-9. Snipping Tool
-10. Registry Editor
+  const prompt = `Go to extensions using clicks only. Vscode.
   `;
 
   const run = await execute(prompt);
 
   console.log(run.response);
+  console.log(run.toolUsage);
+  console.log("Tokens: ", run.tokenUsage);
 }
 
 main();

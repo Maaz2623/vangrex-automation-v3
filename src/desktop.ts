@@ -1,3 +1,3 @@
-import { Desktop } from "@mediar-ai/terminator";
+import * as Terminator from "@mediar-ai/terminator";
 
-export const desktop = new Desktop();
+export const desktop = new Terminator.Desktop(true, true);
