@@ -218,19 +218,34 @@ const tools = {
     inputSchema: z.object({
       applicationName: z
         .string()
-        .optional()
+        // .optional()
         .describe("Optional application name to activate."),
+      windowTitle: z
+        .string()
+        .describe(
+          "The title of the window. Use This PC to interact with file explorer and process name as explorer.exe",
+        ),
     }),
-    execute: async ({ applicationName }) => {
+    execute: async ({ applicationName, windowTitle }) => {
       console.log("\n[OBSERVE] Fetching UI tree");
 
-      const result = await getUiTree(applicationName);
+      const result = await desktop.getWindowTreeResult(
+        applicationName,
+        windowTitle,
+        {
+          formatOutput: true,
+          treeOutputFormat: Terminator.TreeOutputFormat.CompactYaml,
+          propertyMode: Terminator.PropertyLoadingMode.Smart,
+          includeWindowScreenshot: true,
+          // includeMonitorScreenshots: false,
+        },
+      );
 
-      console.log(`[APP] ${result.currentApplication}`);
+      console.log(`[APP] ${result.pid}`);
 
       return {
         message: "Fetched the application UI tree.",
-        currentApplication: result.currentApplication,
+        currentApplication: result.pid,
         tree: result.tree,
       };
     },

@@ -14,7 +14,7 @@ async function execute(query: string) {
 }
 
 async function main() {
-  const prompt = `Go to extensions using clicks only. Vscode.
+  const prompt = `Go to downloads folder by clicks and extract fira code zip file.
   `;
 
   const run = await execute(prompt);
