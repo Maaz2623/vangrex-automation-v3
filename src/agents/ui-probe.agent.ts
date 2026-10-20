@@ -5,65 +5,12 @@ import z from "zod";
 import * as Terminator from "@mediar-ai/terminator";
 import { desktop } from "../desktop";
 
-const uiProbeAgent = new WorkflowAgent({
+const uiProbeAgent = new ToolLoopAgent({
   model: languageModel,
   instructions:
-    "You are responsible only for getting the ui tree of an app or desktop or an application that is running.",
+    "You are responsible only for getting the ui tree of an app or desktop or an application that is running. Use applicationName as This PC for file explorer",
   tools: {
-    get_ui_tree: tool({
-      description: "Use to get the ui tree of a running application.",
-      inputSchema: z.object({
-        applicationName: z
-          .string()
-          .optional()
-          .describe(
-            "An optional value that is passed to verify and get the ui tree. Example: to focus or open the application first.",
-          ),
-        windowTitle: z
-          .string()
-          .describe("The exact window title. use This PC for explorer stuff."),
-      }),
-      execute: async ({ applicationName, windowTitle }) => {
-        if (applicationName) {
-          const application = desktop.application(applicationName);
-
-          const treeResult = desktop.getWindowTreeResult(
-            application.processName(),
-            windowTitle.trim() || undefined,
-            {
-              formatOutput: true,
-              treeOutputFormat: Terminator.TreeOutputFormat.CompactYaml,
-              propertyMode: Terminator.PropertyLoadingMode.Smart,
-            },
-          );
-
-          return {
-            message: "Fetched the application ui tree.",
-            tree: treeResult.formatted,
-          };
-        }
-
-        const application = await desktop.getCurrentApplication();
-
-        const treeResult = desktop.getWindowTreeResult(
-          application.processName(),
-          windowTitle.trim() || undefined,
-          {
-            formatOutput: true,
-            treeOutputFormat: Terminator.TreeOutputFormat.CompactYaml,
-            propertyMode: Terminator.PropertyLoadingMode.Smart,
-            includeWindowScreenshot: false,
-            includeMonitorScreenshots: false,
-          },
-        );
-
-        return {
-          message: "Fetched the UI Tree",
-          currentApplication: application.processName(),
-          tree: treeResult.formatted,
-        };
-      },
-    }),
+    
   },
 });
 

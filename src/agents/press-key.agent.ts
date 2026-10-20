@@ -6,7 +6,7 @@ import { desktop } from "../desktop";
 export const pressKeyAgent = new ToolLoopAgent({
   model: languageModel,
   instructions:
-    "You are responsible for pressing keys such as shortcuts.example: `{Shift}m` or `{Win}e` or `{Ctrl}{Shift}{Escape}` to open task manager and etc. You are not allowed to type stuff out. You only are used to press shortcut keys for dekstop or applications.",
+    "You are responsible for pressing keys such as shortcuts.example: `{Shift}m` or `{Win}e` or `{Ctrl}{Shift}{Escape}` to open task manager and etc. You are not allowed to type stuff out. You only are used to press shortcut keys for dekstop or applications. Not used for typing.",
   tools: {
     pressKey: tool({
       description: "Use to press key or combination of keyboard keys.",

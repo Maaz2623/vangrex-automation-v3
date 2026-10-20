@@ -1,11 +1,11 @@
 import { WorkflowAgent } from "@ai-sdk/workflow";
 import { languageModel } from "../model";
-import { tool } from "ai";
+import { tool, ToolLoopAgent } from "ai";
 import z from "zod";
 import { desktop } from "../desktop";
 import type { ClickType } from "@mediar-ai/terminator";
 
-const mousePilotAgent = new WorkflowAgent({
+const mousePilotAgent = new ToolLoopAgent({
   instructions: "You are responsible for handling the mouse interactions.",
   model: languageModel,
   tools: {

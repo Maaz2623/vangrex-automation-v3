@@ -1,34 +1,22 @@
 import { desktop } from "./src/desktop";
 import * as Terminator from "@mediar-ai/terminator";
 
-async function main() {
-  const processName = "explorer.exe";
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-  console.log("Finding File Explorer windows...\n");
+await sleep(2000);
 
-  // Enumerate windows using the process name.
-  const windows = await desktop.windowsForApplication(processName);
+const application = await desktop.application("This PC");
 
-  console.log("Windows returned:", windows.length);
+console.log(application.window());
 
-  for (const window of windows) {
-    console.log(window);
-  }
-
-  console.log("\nGetting UI tree for the This PC window...\n");
-
-  // Target the File Explorer window by its shell location title.
-  const result = await desktop.getWindowTreeResult(processName, "This PC", {
+const tree = await desktop.getWindowTreeResult(
+  application.processName(),
+  application.name(),
+  {
     formatOutput: true,
     treeOutputFormat: Terminator.TreeOutputFormat.CompactYaml,
-    propertyMode: Terminator.PropertyLoadingMode.Smart,
-    includeWindowScreenshot: false,
-    includeMonitorScreenshots: false,
-  });
+    propertyMode: Terminator.PropertyLoadingMode.Fast,
+  },
+);
 
-  console.log(result.formatted);
-}
-
-main().catch((error) => {
-  console.error("Failed to inspect File Explorer:", error);
-});
+console.log(tree.formatted);
