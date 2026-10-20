@@ -14,7 +14,7 @@ async function execute(query: string) {
 }
 
 async function main() {
-  const prompt = `Go to downloads folder by clicks and extract fira code zip file.
+  const prompt = `Open explorer and click on downloads. Right click and delete fira code.
   `;
 
   const run = await execute(prompt);

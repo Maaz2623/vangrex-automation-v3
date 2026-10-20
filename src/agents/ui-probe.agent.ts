@@ -19,16 +19,17 @@ const uiProbeAgent = new WorkflowAgent({
           .describe(
             "An optional value that is passed to verify and get the ui tree. Example: to focus or open the application first.",
           ),
+        windowTitle: z
+          .string()
+          .describe("The exact window title. use This PC for explorer stuff."),
       }),
-      execute: async ({ applicationName }) => {
+      execute: async ({ applicationName, windowTitle }) => {
         if (applicationName) {
           const application = desktop.application(applicationName);
 
-          application.activateWindow();
-
           const treeResult = desktop.getWindowTreeResult(
             application.processName(),
-            undefined,
+            windowTitle.trim() || undefined,
             {
               formatOutput: true,
               treeOutputFormat: Terminator.TreeOutputFormat.CompactYaml,
@@ -46,7 +47,7 @@ const uiProbeAgent = new WorkflowAgent({
 
         const treeResult = desktop.getWindowTreeResult(
           application.processName(),
-          undefined,
+          windowTitle.trim() || undefined,
           {
             formatOutput: true,
             treeOutputFormat: Terminator.TreeOutputFormat.CompactYaml,
@@ -68,7 +69,7 @@ const uiProbeAgent = new WorkflowAgent({
 
 export const uiProbeAgentTool = tool({
   description:
-    "Use to get the ui tree of a specific appplication or the currently running application.",
+    "Use to get the ui tree of a specific appplication or the currently running application. Try window title. Use This PC for explorer related stuff",
   inputSchema: z.object({
     task: z.string().describe("The tree related tasks to perform"),
   }),

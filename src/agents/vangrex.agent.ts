@@ -7,10 +7,10 @@ import { mousePilotAgentTool } from "./mouse-pilot.agent";
 export const vangrexAgent = new WorkflowAgent({
   model: languageModel,
   instructions:
-    "You are an agent orchestrator used to do everything plus mainly automating desktop.",
+    "You are an agent orchestrator used to do everything plus mainly automating desktop. Always do win d first to start interactions from desktop.",
   tools: {
     pressKey: pressKeyAgentTool,
     getUiTree: uiProbeAgentTool,
-    mousePilot: mousePilotAgentTool
+    mousePilot: mousePilotAgentTool,
   },
 });
