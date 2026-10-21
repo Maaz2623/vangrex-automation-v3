@@ -1,0 +1,943 @@
+{
+  "id": "308689",
+  "attributes": {
+    "role": "Window",
+    "name": "Calculator",
+    "label": null,
+    "value": null,
+    "description": null,
+    "properties": {},
+    "is_keyboard_focusable": true,
+    "bounds": {
+      "x": 40.0,
+      "y": 32.0,
+      "width": 337.0,
+      "height": 542.0
+    }
+  },
+  "children": [
+    {
+      "id": "706148",
+      "attributes": {
+        "role": "Window",
+        "name": "Calculator",
+        "label": null,
+        "value": null,
+        "description": null,
+        "properties": {},
+        "is_keyboard_focusable": null,
+        "bounds": null
+      },
+      "children": [
+        {
+          "id": "109506",
+          "attributes": {
+            "role": "MenuBar",
+            "name": "System",
+            "label": null,
+            "value": null,
+            "description": null,
+            "properties": {},
+            "is_keyboard_focusable": true,
+            "bounds": {
+              "x": 0.0,
+              "y": 0.0,
+              "width": 1.0,
+              "height": 1.0
+            }
+          },
+          "children": [
+            {
+              "id": "146261",
+              "attributes": {
+                "role": "MenuItem",
+                "name": "System",
+                "label": null,
+                "value": null,
+                "description": null,
+                "properties": {},
+                "is_keyboard_focusable": true,
+                "bounds": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "width": 1.0,
+                  "height": 1.0
+                }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "141577",
+          "attributes": {
+            "role": "Button",
+            "name": "Minimize Calculator",
+            "label": null,
+            "value": null,
+            "description": null,
+            "properties": {},
+            "is_keyboard_focusable": null,
+            "bounds": null
+          },
+          "children": []
+        },
+        {
+          "id": "149505",
+          "attributes": {
+            "role": "Button",
+            "name": "Maximize Calculator",
+            "label": null,
+            "value": null,
+            "description": null,
+            "properties": {},
+            "is_keyboard_focusable": null,
+            "bounds": null
+          },
+          "children": []
+        },
+        {
+          "id": "100043",
+          "attributes": {
+            "role": "Button",
+            "name": "Close Calculator",
+            "label": null,
+            "value": null,
+            "description": null,
+            "properties": {},
+            "is_keyboard_focusable": null,
+            "bounds": null
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "293947",
+      "attributes": {
+        "role": "Window",
+        "name": "Calculator",
+        "label": null,
+        "value": null,
+        "description": null,
+        "properties": {},
+        "is_keyboard_focusable": null,
+        "bounds": null
+      },
+      "children": [
+        {
+          "id": "169676",
+          "attributes": {
+            "role": "Text",
+            "name": "Calculator",
+            "label": null,
+            "value": null,
+            "description": null,
+            "properties": {},
+            "is_keyboard_focusable": null,
+            "bounds": null
+          },
+          "children": []
+        },
+        {
+          "id": "121777",
+          "attributes": {
+            "role": "Custom",
+            "name": null,
+            "label": null,
+            "value": null,
+            "description": null,
+            "properties": {},
+            "is_keyboard_focusable": null,
+            "bounds": null
+          },
+          "children": [
+            {
+              "id": "160288",
+              "attributes": {
+                "role": "Button",
+                "name": "Open Navigation",
+                "label": null,
+                "value": null,
+                "description": null,
+                "properties": {},
+                "is_keyboard_focusable": true,
+                "bounds": {
+                  "x": 52.0,
+                  "y": 71.0,
+                  "width": 41.0,
+                  "height": 37.0
+                }
+              },
+              "children": [
+                {
+                  "id": "726914",
+                  "attributes": {
+                    "role": "Text",
+                    "name": null,
+                    "label": null,
+                    "value": null,
+                    "description": null,
+                    "properties": {},
+                    "is_keyboard_focusable": null,
+                    "bounds": null
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "134998",
+              "attributes": {
+                "role": "Group",
+                "name": null,
+                "label": null,
+                "value": null,
+                "description": null,
+                "properties": {},
+                "is_keyboard_focusable": null,
+                "bounds": null
+              },
+              "children": [
+                {
+                  "id": "726093",
+                  "attributes": {
+                    "role": "Text",
+                    "name": "Expression is ",
+                    "label": null,
+                    "value": null,
+                    "description": null,
+                    "properties": {},
+                    "is_keyboard_focusable": null,
+                    "bounds": null
+                  },
+                  "children": []
+                },
+                {
+                  "id": "248473",
+                  "attributes": {
+                    "role": "Text",
+                    "name": "Display is 0",
+                    "label": null,
+                    "value": null,
+                    "description": null,
+                    "properties": {},
+                    "is_keyboard_focusable": true,
+                    "bounds": {
+                      "x": 48.0,
+                      "y": 136.0,
+                      "width": 321.0,
+                      "height": 76.0
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "id": "968594",
+                  "attributes": {
+                    "role": "Button",
+                    "name": "Open history flyout",
+                    "label": null,
+                    "value": null,
+                    "description": null,
+                    "properties": {},
+                    "is_keyboard_focusable": true,
+                    "bounds": {
+                      "x": 328.0,
+                      "y": 73.0,
+                      "width": 33.0,
+                      "height": 33.0
+                    }
+                  },
+                  "children": []
+                },
+                {
+                  "id": "165438",
+                  "attributes": {
+                    "role": "Group",
+                    "name": "Memory controls",
+                    "label": null,
+                    "value": null,
+                    "description": null,
+                    "properties": {},
+                    "is_keyboard_focusable": null,
+                    "bounds": null
+                  },
+                  "children": [
+                    {
+                      "id": "544765",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Clear all memory",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": null,
+                        "bounds": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "170133",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Memory recall",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": null,
+                        "bounds": null
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "357675",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Memory add",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 156.0,
+                          "y": 212.0,
+                          "width": 51.0,
+                          "height": 32.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "848922",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Memory subtract",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 208.0,
+                          "y": 212.0,
+                          "width": 51.0,
+                          "height": 32.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "179568",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Memory store",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 260.0,
+                          "y": 212.0,
+                          "width": 52.0,
+                          "height": 32.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "136256",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Open memory flyout",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": null,
+                        "bounds": null
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "163630",
+                  "attributes": {
+                    "role": "Group",
+                    "name": "Display controls",
+                    "label": null,
+                    "value": null,
+                    "description": null,
+                    "properties": {},
+                    "is_keyboard_focusable": null,
+                    "bounds": null
+                  },
+                  "children": [
+                    {
+                      "id": "157521",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Percent",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 52.0,
+                          "y": 245.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "124004",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Clear entry",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 131.0,
+                          "y": 245.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "348458",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Clear",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 209.0,
+                          "y": 245.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "873174",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Backspace",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 288.0,
+                          "y": 245.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "991022",
+                  "attributes": {
+                    "role": "Group",
+                    "name": "Standard functions",
+                    "label": null,
+                    "value": null,
+                    "description": null,
+                    "properties": {},
+                    "is_keyboard_focusable": null,
+                    "bounds": null
+                  },
+                  "children": [
+                    {
+                      "id": "157372",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Reciprocal",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 52.0,
+                          "y": 298.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "128084",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Square",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 131.0,
+                          "y": 298.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "131743",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Square root",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 209.0,
+                          "y": 298.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "145848",
+                  "attributes": {
+                    "role": "Group",
+                    "name": "Standard operators",
+                    "label": null,
+                    "value": null,
+                    "description": null,
+                    "properties": {},
+                    "is_keyboard_focusable": null,
+                    "bounds": null
+                  },
+                  "children": [
+                    {
+                      "id": "108704",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Divide by",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 288.0,
+                          "y": 298.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "167611",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Multiply by",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 288.0,
+                          "y": 351.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "139975",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Minus",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 288.0,
+                          "y": 404.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "975271",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Plus",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 288.0,
+                          "y": 457.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "133152",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Equals",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 288.0,
+                          "y": 510.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "131263",
+                  "attributes": {
+                    "role": "Group",
+                    "name": "Number pad",
+                    "label": null,
+                    "value": null,
+                    "description": null,
+                    "properties": {},
+                    "is_keyboard_focusable": null,
+                    "bounds": null
+                  },
+                  "children": [
+                    {
+                      "id": "157084",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Zero",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 131.0,
+                          "y": 510.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "163696",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "One",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 52.0,
+                          "y": 457.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "320270",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Two",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 131.0,
+                          "y": 457.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "935523",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Three",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 210.0,
+                          "y": 457.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "336875",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Four",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 52.0,
+                          "y": 404.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "988648",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Five",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 131.0,
+                          "y": 404.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "929528",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Six",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 210.0,
+                          "y": 404.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "119613",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Seven",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 52.0,
+                          "y": 351.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "371459",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Eight",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 131.0,
+                          "y": 351.0,
+                          "width": 78.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "586645",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Nine",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 210.0,
+                          "y": 351.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    },
+                    {
+                      "id": "888665",
+                      "attributes": {
+                        "role": "Button",
+                        "name": "Decimal separator",
+                        "label": null,
+                        "value": null,
+                        "description": null,
+                        "properties": {},
+                        "is_keyboard_focusable": true,
+                        "bounds": {
+                          "x": 210.0,
+                          "y": 510.0,
+                          "width": 77.0,
+                          "height": 52.0
+                        }
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "131494",
+                  "attributes": {
+                    "role": "Button",
+                    "name": "Positive negative",
+                    "label": null,
+                    "value": null,
+                    "description": null,
+                    "properties": {},
+                    "is_keyboard_focusable": true,
+                    "bounds": {
+                      "x": 52.0,
+                      "y": 510.0,
+                      "width": 78.0,
+                      "height": 52.0
+                    }
+                  },
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "638921",
+              "attributes": {
+                "role": "Text",
+                "name": "Standard Calculator mode",
+                "label": null,
+                "value": null,
+                "description": null,
+                "properties": {},
+                "is_keyboard_focusable": null,
+                "bounds": null
+              },
+              "children": []
+            },
+            {
+              "id": "153061",
+              "attributes": {
+                "role": "Button",
+                "name": "Keep on top",
+                "label": null,
+                "value": null,
+                "description": null,
+                "properties": {},
+                "is_keyboard_focusable": true,
+                "bounds": {
+                  "x": 188.0,
+                  "y": 73.0,
+                  "width": 33.0,
+                  "height": 33.0
+                }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "493024",
+      "attributes": {
+        "role": "Pane",
+        "name": null,
+        "label": null,
+        "value": null,
+        "description": null,
+        "properties": {},
+        "is_keyboard_focusable": true,
+        "bounds": {
+          "x": 48.0,
+          "y": 65.0,
+          "width": 321.0,
+          "height": 501.0
+        }
+      },
+      "children": []
+    }
+  ]
+}

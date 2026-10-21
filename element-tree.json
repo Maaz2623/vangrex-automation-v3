@@ -1,0 +1,547 @@
+{
+  "id": "174279",
+  "attributes": {
+    "role": "MenuItem",
+    "name": "File",
+    "properties": {},
+    "bounds": { "x": 35, "y": 0, "width": 37, "height": 36 }
+  },
+  "children": [
+    {
+      "id": "467798",
+      "attributes": {
+        "role": "Menu",
+        "name": "File",
+        "properties": {},
+        "bounds": { "x": 36, "y": 33, "width": 332, "height": 607 }
+      },
+      "children": [
+        {
+          "id": "453077",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "New Text File Ctrl+N",
+            "properties": {},
+            "bounds": { "x": 40, "y": 33, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "592536",
+              "attributes": {
+                "role": "Group",
+                "name": "New Text File",
+                "properties": {},
+                "bounds": { "x": 40, "y": 39, "width": 164, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "177521",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "New File... Ctrl+Alt+Windows+N",
+            "properties": {},
+            "bounds": { "x": 40, "y": 57, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "107298",
+              "attributes": {
+                "role": "Group",
+                "name": "New File...",
+                "properties": {},
+                "bounds": { "x": 40, "y": 63, "width": 123, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "592300",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "New Window Ctrl+Shift+N",
+            "properties": {},
+            "bounds": { "x": 40, "y": 81, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "424884",
+              "attributes": {
+                "role": "Group",
+                "name": "New Window",
+                "properties": {},
+                "bounds": { "x": 40, "y": 87, "width": 153, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "139399",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "New Window with Profile",
+            "properties": {},
+            "bounds": { "x": 40, "y": 105, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "926599",
+              "attributes": {
+                "role": "Group",
+                "name": "New Window with Profile",
+                "properties": {},
+                "bounds": { "x": 40, "y": 111, "width": 198, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "925943",
+          "attributes": {
+            "role": "Group",
+            "properties": {},
+            "bounds": { "x": 36, "y": 134, "width": 332, "height": 3 }
+          },
+          "children": []
+        },
+        {
+          "id": "155360",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Open File... Ctrl+O",
+            "properties": {},
+            "bounds": { "x": 40, "y": 140, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "141468",
+              "attributes": {
+                "role": "Group",
+                "name": "Open File...",
+                "properties": {},
+                "bounds": { "x": 40, "y": 146, "width": 155, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "101767",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Open Folder... Ctrl+K Ctrl+O",
+            "properties": {},
+            "bounds": { "x": 40, "y": 164, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "834236",
+              "attributes": {
+                "role": "Group",
+                "name": "Open Folder...",
+                "properties": {},
+                "bounds": { "x": 40, "y": 170, "width": 153, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "171140",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Open Workspace from File...",
+            "properties": {},
+            "bounds": { "x": 40, "y": 188, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "591132",
+              "attributes": {
+                "role": "Group",
+                "name": "Open Workspace from File...",
+                "properties": {},
+                "bounds": { "x": 40, "y": 194, "width": 233, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "103058",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Open Recent",
+            "properties": {},
+            "bounds": { "x": 40, "y": 212, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "179299",
+              "attributes": {
+                "role": "Group",
+                "name": "Open Recent",
+                "properties": {},
+                "bounds": { "x": 40, "y": 218, "width": 142, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "925943",
+          "attributes": {
+            "role": "Group",
+            "properties": {},
+            "bounds": { "x": 36, "y": 241, "width": 332, "height": 3 }
+          },
+          "children": []
+        },
+        {
+          "id": "825572",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Add Folder to Workspace...",
+            "properties": {},
+            "bounds": { "x": 40, "y": 247, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "115601",
+              "attributes": {
+                "role": "Group",
+                "name": "Add Folder to Workspace...",
+                "properties": {},
+                "bounds": { "x": 40, "y": 253, "width": 229, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "122202",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Save Workspace As...",
+            "properties": {},
+            "bounds": { "x": 40, "y": 271, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "162579",
+              "attributes": {
+                "role": "Group",
+                "name": "Save Workspace As...",
+                "properties": {},
+                "bounds": { "x": 40, "y": 277, "width": 206, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "353056",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Duplicate Workspace",
+            "properties": {},
+            "bounds": { "x": 40, "y": 295, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "182118",
+              "attributes": {
+                "role": "Group",
+                "name": "Duplicate Workspace",
+                "properties": {},
+                "bounds": { "x": 40, "y": 301, "width": 207, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "925943",
+          "attributes": {
+            "role": "Group",
+            "properties": {},
+            "bounds": { "x": 36, "y": 324, "width": 332, "height": 3 }
+          },
+          "children": []
+        },
+        {
+          "id": "252715",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Save Ctrl+S",
+            "properties": {},
+            "bounds": { "x": 40, "y": 330, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "926225",
+              "attributes": {
+                "role": "Group",
+                "name": "Save",
+                "properties": {},
+                "bounds": { "x": 40, "y": 336, "width": 132, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "625101",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Save As... Ctrl+Shift+S",
+            "properties": {},
+            "bounds": { "x": 40, "y": 354, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "414076",
+              "attributes": {
+                "role": "Group",
+                "name": "Save As...",
+                "properties": {},
+                "bounds": { "x": 40, "y": 360, "width": 138, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "119356",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Save All Ctrl+K S",
+            "properties": {},
+            "bounds": { "x": 40, "y": 378, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "112705",
+              "attributes": {
+                "role": "Group",
+                "name": "Save All",
+                "properties": {},
+                "bounds": { "x": 40, "y": 384, "width": 140, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "925943",
+          "attributes": {
+            "role": "Group",
+            "properties": {},
+            "bounds": { "x": 36, "y": 407, "width": 332, "height": 3 }
+          },
+          "children": []
+        },
+        {
+          "id": "620765",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Share",
+            "properties": {},
+            "bounds": { "x": 40, "y": 413, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "777946",
+              "attributes": {
+                "role": "Group",
+                "name": "Share",
+                "properties": {},
+                "bounds": { "x": 40, "y": 419, "width": 108, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "925943",
+          "attributes": {
+            "role": "Group",
+            "properties": {},
+            "bounds": { "x": 36, "y": 442, "width": 332, "height": 3 }
+          },
+          "children": []
+        },
+        {
+          "id": "763549",
+          "attributes": {
+            "role": "CheckBox",
+            "name": " Auto Save",
+            "properties": {},
+            "bounds": { "x": 40, "y": 448, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "157939",
+              "attributes": {
+                "role": "Group",
+                "name": "Auto Save",
+                "properties": {},
+                "bounds": { "x": 40, "y": 454, "width": 165, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "947718",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Preferences",
+            "properties": {},
+            "bounds": { "x": 40, "y": 472, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "552177",
+              "attributes": {
+                "role": "Group",
+                "name": "Preferences",
+                "properties": {},
+                "bounds": { "x": 40, "y": 478, "width": 136, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "925943",
+          "attributes": {
+            "role": "Group",
+            "properties": {},
+            "bounds": { "x": 36, "y": 501, "width": 332, "height": 3 }
+          },
+          "children": []
+        },
+        {
+          "id": "110156",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Revert File",
+            "properties": {},
+            "bounds": { "x": 40, "y": 507, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "107977",
+              "attributes": {
+                "role": "Group",
+                "name": "Revert File",
+                "properties": {},
+                "bounds": { "x": 40, "y": 513, "width": 166, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "308687",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Close Editor Ctrl+F4",
+            "properties": {},
+            "bounds": { "x": 40, "y": 531, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "257042",
+              "attributes": {
+                "role": "Group",
+                "name": "Close Editor",
+                "properties": {},
+                "bounds": { "x": 40, "y": 537, "width": 158, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "179452",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Close Folder Ctrl+K F",
+            "properties": {},
+            "bounds": { "x": 40, "y": 555, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "109022",
+              "attributes": {
+                "role": "Group",
+                "name": "Close Folder",
+                "properties": {},
+                "bounds": { "x": 40, "y": 561, "width": 158, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "156827",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Close Window Alt+F4",
+            "properties": {},
+            "bounds": { "x": 40, "y": 579, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "883375",
+              "attributes": {
+                "role": "Group",
+                "name": "Close Window",
+                "properties": {},
+                "bounds": { "x": 40, "y": 585, "width": 168, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "925943",
+          "attributes": {
+            "role": "Group",
+            "properties": {},
+            "bounds": { "x": 36, "y": 608, "width": 332, "height": 3 }
+          },
+          "children": []
+        },
+        {
+          "id": "872845",
+          "attributes": {
+            "role": "MenuItem",
+            "name": "Exit",
+            "properties": {},
+            "bounds": { "x": 40, "y": 614, "width": 324, "height": 26 }
+          },
+          "children": [
+            {
+              "id": "183730",
+              "attributes": {
+                "role": "Group",
+                "name": "Exit",
+                "properties": {},
+                "bounds": { "x": 40, "y": 620, "width": 140, "height": 14 }
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

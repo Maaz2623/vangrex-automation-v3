@@ -1,0 +1,19 @@
+{
+  "name": "vangrex-automation-v3",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "bun check"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^26.6.5"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@mediar-ai/terminator": "^0.24.32"
+  }
+}
