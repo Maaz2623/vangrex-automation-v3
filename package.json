@@ -14,6 +14,11 @@
     "typescript": "^7"
   },
   "dependencies": {
-    "@mediar-ai/terminator": "^0.24.32"
+    "@ai-sdk/google": "^4.0.102",
+    "@google/genai": "^2.30.0",
+    "@mediar-ai/terminator": "^0.24.32",
+    "@remotion/paths": "^4.0.537",
+    "ai": "^7.0.148",
+    "dotenv": "^18.0.8"
   }
 }
