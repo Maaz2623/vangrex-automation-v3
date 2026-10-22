@@ -42,7 +42,7 @@ const tree = desktop.getWindowTreeResult(application.processName(), undefined, {
 await writeFile("tree.txt", tree.formatted as string, "utf-8");
 
 const element = await application
-  .locator("role:Pane|name:Using Brush tool on Canvas")
+  .locator("role:Group|name:Using Brush tool on Canvas")
   .first(2000);
 
 console.log("Canvas element:", element);
@@ -74,13 +74,14 @@ function toScreenPoint(x: number, y: number): [number, number] {
 
 type Point = [number, number];
 type Line = [Point, Point];
+type Polyline = Point[];
 
-// House dimensions and placement, in screen coordinates.
-// Center the drawing horizontally and keep it comfortably inside the canvas.
+// House dimensions and placement.
 const HOUSE_WIDTH = 460;
 const HOUSE_HEIGHT = 360;
 
 const HOUSE_LEFT = Math.round(CANVAS.left + (CANVAS.width - HOUSE_WIDTH) / 2);
+
 const HOUSE_TOP = Math.round(
   CANVAS.top + (CANVAS.height - HOUSE_HEIGHT) / 2 + 15,
 );
@@ -205,14 +206,17 @@ const lines: Line[] = [
     [315, 180],
   ],
 
-  // Attic round window
-  ...Array.from({ length: 48 }, (_, i): Line => {
+  // Attic round window: 96 samples
+  ...Array.from({ length: 96 }, (_, i): Line => {
     const point = (j: number): Point => {
-      const angle = (j / 48) * Math.PI * 2;
+      const angle = (j / 96) * Math.PI * 2;
+
       return [230 + 22 * Math.cos(angle), 158 + 22 * Math.sin(angle)];
     };
+
     return [point(i), point(i + 1)];
   }),
+
   [
     [208, 158],
     [252, 158],
@@ -522,31 +526,37 @@ const lines: Line[] = [
     [46, 276],
   ],
 
-  // Tree canopy
-  ...Array.from({ length: 60 }, (_, i): Line => {
+  // Tree canopy: 120 samples
+  ...Array.from({ length: 120 }, (_, i): Line => {
     const point = (j: number): Point => {
-      const angle = (j / 60) * Math.PI * 2;
+      const angle = (j / 120) * Math.PI * 2;
       const radius = 32 + 5 * Math.sin(angle * 5);
+
       return [28 + radius * Math.cos(angle), 265 + radius * Math.sin(angle)];
     };
+
     return [point(i), point(i + 1)];
   }),
 
-  // Left bush
-  ...Array.from({ length: 36 }, (_, i): Line => {
+  // Left bush: 72 samples
+  ...Array.from({ length: 72 }, (_, i): Line => {
     const point = (j: number): Point => {
-      const angle = (j / 36) * Math.PI * 2;
+      const angle = (j / 72) * Math.PI * 2;
+
       return [90 + 25 * Math.cos(angle), 365 + 13 * Math.sin(angle)];
     };
+
     return [point(i), point(i + 1)];
   }),
 
-  // Right bush
-  ...Array.from({ length: 36 }, (_, i): Line => {
+  // Right bush: 72 samples
+  ...Array.from({ length: 72 }, (_, i): Line => {
     const point = (j: number): Point => {
-      const angle = (j / 36) * Math.PI * 2;
+      const angle = (j / 72) * Math.PI * 2;
+
       return [370 + 25 * Math.cos(angle), 365 + 13 * Math.sin(angle)];
     };
+
     return [point(i), point(i + 1)];
   }),
 
@@ -557,66 +567,107 @@ const lines: Line[] = [
   ],
 ];
 
-// Convert house-local coordinates into safe screen coordinates.
+// Convert local coordinates into safe screen coordinates.
 const screenLines: Line[] = lines.map(([[x1, y1], [x2, y2]]) => [
   P(x1, y1),
   P(x2, y2),
 ]);
 
-const delay = 2;
-const stepsPerLine = 24;
+// Drawing settings.
+// Smaller steps improve detail but increase mouse events.
+const PIXELS_PER_STEP = 2;
+const MOVE_INTERVAL_MS = 1;
+const MIN_STEPS_PER_SEGMENT = 1;
+
+function samePoint(a: Point, b: Point): boolean {
+  return a[0] === b[0] && a[1] === b[1];
+}
+
+// Join adjacent segments when their endpoints connect.
+// This reduces repeated mouse presses for continuous curves.
+function buildPolylines(segments: Line[]): Polyline[] {
+  const paths: Polyline[] = [];
+
+  for (const [start, end] of segments) {
+    const previous = paths[paths.length - 1];
+
+    if (previous && samePoint(previous[previous.length - 1], start)) {
+      previous.push(end);
+    } else {
+      paths.push([start, end]);
+    }
+  }
+
+  return paths;
+}
 
 async function moveSafely(x: number, y: number): Promise<void> {
   const [safeX, safeY] = toScreenPoint(x, y);
+
   await application.mouseMove(safeX, safeY);
 }
 
-async function drawLine(
-  [startX, startY]: Point,
-  [endX, endY]: Point,
-): Promise<void> {
-  // All endpoints and interpolated points stay within the canvas.
-  const [sx, sy] = toScreenPoint(startX, startY);
-  const [ex, ey] = toScreenPoint(endX, endY);
+async function drawPolyline(points: Polyline): Promise<void> {
+  if (points.length < 2) return;
 
-  await moveSafely(sx, sy);
-  await sleep(2);
+  const safePoints = points.map(([x, y]) => toScreenPoint(x, y));
+  const [startX, startY] = safePoints[0];
 
-  await application.mouseClickAndHold(sx, sy);
+  await moveSafely(startX, startY);
+  await sleep(5);
+
+  await application.mouseClickAndHold(startX, startY);
 
   try {
-    for (let step = 1; step <= stepsPerLine; step++) {
-      const t = step / stepsPerLine;
-      const eased = t * t * (3 - 2 * t);
+    for (let i = 1; i < safePoints.length; i++) {
+      const [x1, y1] = safePoints[i - 1];
+      const [x2, y2] = safePoints[i];
 
-      const x = Math.round(sx + (ex - sx) * eased);
-      const y = Math.round(sy + (ey - sy) * eased);
+      const distance = Math.hypot(x2 - x1, y2 - y1);
 
-      await moveSafely(x, y);
-      await sleep(delay);
+      const steps = Math.max(
+        MIN_STEPS_PER_SEGMENT,
+        Math.ceil(distance / PIXELS_PER_STEP),
+      );
+
+      for (let step = 1; step <= steps; step++) {
+        const t = step / steps;
+
+        // Linear interpolation keeps movement consistent.
+        const x = Math.round(x1 + (x2 - x1) * t);
+        const y = Math.round(y1 + (y2 - y1) * t);
+
+        await moveSafely(x, y);
+
+        if (MOVE_INTERVAL_MS > 0) {
+          await sleep(MOVE_INTERVAL_MS);
+        }
+      }
     }
   } finally {
     await application.mouseRelease();
   }
-
-  await sleep(2);
 }
 
-// Start from the actual pointer location, then travel to a proper
-// starting point inside the canvas before drawing.
+const paths = buildPolylines(screenLines);
+
+// Move from the current pointer location to the drawing start.
 const [currentX, currentY] = getCurrentPointerPosition();
 const drawingStart = P(25, 185);
 
 console.log("Current pointer:", [currentX, currentY]);
 console.log("Canvas-safe drawing start:", drawingStart);
-console.log(`Drawing detailed house (${screenLines.length} line segments)...`);
+
+console.log(
+  `Drawing ${screenLines.length} segments as ${paths.length} continuous strokes...`,
+);
 
 await moveSafely(currentX, currentY);
-await application.mouseMove(drawingStart[0], drawingStart[1]);
-await sleep(500);
+await moveSafely(drawingStart[0], drawingStart[1]);
+await sleep(300);
 
-for (const [start, end] of screenLines) {
-  await drawLine(start, end);
+for (const path of paths) {
+  await drawPolyline(path);
 }
 
 console.log("Detailed house drawing completed.");

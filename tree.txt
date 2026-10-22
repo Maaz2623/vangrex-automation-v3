@@ -1,121 +1,175 @@
-#1 [Window] Untitled - Paint (bounds: [-8,-8,1383,785], focused, focusable)
-  #2 [Pane] UIRibbonDockTop (bounds: [0,23,1367,117], focusable)
-    #3 [Pane] Ribbon (bounds: [0,23,1367,117], focusable)
-      #4 [Pane] Ribbon (bounds: [0,23,1367,117], focusable)
-        #5 [Pane] (bounds: [0,23,1367,148], focusable)
-          - [Pane] Ribbon
-            - [ToolBar] Quick Access Toolbar
-              #6 [Button] Save (bounds: [30,-1,23,25], focusable)
-              #7 [Button] Undo (bounds: [52,-1,23,25], disabled, focusable)
-              #8 [Button] Redo (bounds: [74,-1,23,25], disabled, focusable)
-            #9 [Button] Customize Quick Access Toolbar (bounds: [97,1,14,23], focusable)
-            #10 [Button] File tab (bounds: [0,23,57,24], focusable)
-            - [Tab] Ribbon tabs
-              - [Custom]
-                #11 [TabItem] Home (bounds: [56,23,59,24], focusable)
-                #12 [TabItem] View (bounds: [115,23,54,24], focusable)
-            #13 [Button] Minimize the Ribbon (bounds: [1322,23,23,23], focusable)
-            #14 [Button] Help (bounds: [1344,23,23,23], focusable)
-            - [Pane] Lower Ribbon
-              - [Custom]
-                - [Custom] Home
-                  - [ToolBar] Clipboard
-                    - [Group] Paste
-                      #15 [SplitButton] Paste (bounds: [6,51,43,39], disabled, focusable)
-                      - [SplitButton] Paste
-                    #16 [Button] Cut (bounds: [48,51,45,23], disabled, focusable)
-                    #17 [Button] Copy (bounds: [48,73,53,23], disabled, focusable)
-                  - [ToolBar] Image
-                    - [Group] Select
-                      #18 [SplitButton] Select (bounds: [111,51,43,39], focusable)
-                      - [SplitButton] Select
-                    #19 [Button] Crop (bounds: [153,51,52,23], disabled, focusable)
-                    #20 [Button] Resize (bounds: [153,73,59,23], focusable)
-                    #21 [SplitButton] Rotate (bounds: [153,95,70,23], focusable)
-                  - [ToolBar] Tools
-                    #22 [Button] Pencil (bounds: [233,59,24,23], focusable)
-                    #23 [Button] Fill with color (bounds: [256,59,25,23], focusable)
-                    #24 [Button] Text (bounds: [280,59,23,23], focusable)
-                    #25 [Button] Eraser (bounds: [233,88,24,23], focusable)
-                    #26 [Button] Color picker (bounds: [256,88,25,23], focusable)
-                    #27 [Button] Magnifier (bounds: [280,88,23,23], focusable)
-                  - [ToolBar]
-                    - [Group] Brushes
-                      #28 [SplitButton] Brushes (bounds: [313,51,46,39], focusable)
-                      - [Button] Brushes
-                  - [ToolBar] Shapes
-                    - [Group] Shapes
-                      - [List] Shapes
-                        - [Custom]
-                          #29 [ListItem] Line (bounds: [371,54,21,21], focusable)
-                          #30 [ListItem] Curve (bounds: [391,54,21,21], focusable)
-                          #31 [ListItem] Oval (bounds: [411,54,21,21], focusable)
-                          #32 [ListItem] Rectangle (bounds: [431,54,21,21], focusable)
-                          #33 [ListItem] Rounded rectangle (bounds: [451,54,21,21], focusable)
-                          #34 [ListItem] Polygon (bounds: [471,54,21,21], focusable)
-                          #35 [ListItem] Triangle (bounds: [491,54,21,21], focusable)
-                          #36 [ListItem] Right triangle (bounds: [371,74,21,21], focusable)
-                          #37 [ListItem] Diamond (bounds: [391,74,21,21], focusable)
-                          #38 [ListItem] Pentagon (bounds: [411,74,21,21], focusable)
-                          #39 [ListItem] Hexagon (bounds: [431,74,21,21], focusable)
-                          #40 [ListItem] Right arrow (bounds: [451,74,21,21], focusable)
-                          #41 [ListItem] Left arrow (bounds: [471,74,21,21], focusable)
-                          #42 [ListItem] Up arrow (bounds: [491,74,21,21], focusable)
-                          #43 [ListItem] Down arrow (bounds: [371,94,21,21], focusable)
-                          #44 [ListItem] Four-point star (bounds: [391,94,21,21], focusable)
-                          #45 [ListItem] Five-point star (bounds: [411,94,21,21], focusable)
-                          #46 [ListItem] Six-point star (bounds: [431,94,21,21], focusable)
-                          #47 [ListItem] Rounded rectangular callout (bounds: [451,94,21,21], focusable)
-                          #48 [ListItem] Oval callout (bounds: [471,94,21,21], focusable)
-                          #49 [ListItem] Cloud callout (bounds: [491,94,21,21], focusable)
-                          #50 [ListItem] Heart (bounds: [0,0,1,1], focusable)
-                          #51 [ListItem] Lightning (bounds: [0,0,1,1], focusable)
-                      - [Button] Row up (disabled)
-                      - [Button] Row down
-                      #52 [Button] Shapes (bounds: [512,94,16,21], focusable)
-                    #53 [SplitButton] Outline (bounds: [530,51,75,23], disabled, focusable)
-                    #54 [SplitButton] Fill (bounds: [530,73,51,23], disabled, focusable)
-                  - [ToolBar]
-                    #55 [SplitButton] Size (bounds: [615,51,43,67], focusable)
-                  - [ToolBar] Colors
-                    #56 [Button] Color 1 (bounds: [668,51,43,67], focusable)
-                    #57 [Button] Color 2 (bounds: [710,51,43,67], focusable)
-                    - [Group]
-                    #58 [Button] Edit colors (bounds: [972,51,43,67], focusable)
-                  - [ToolBar]
-                    #59 [Button] Edit with Paint 3D (bounds: [1025,51,52,67], focusable)
-  #60 [Pane] (bounds: [0,139,1367,603], focusable)
-    #61 [Pane] Using Brush tool on Canvas (bounds: [0,139,1367,603], focused, focusable)
-      - [ScrollBar] Vertical
-        - [Button] Line up
-        - [Thumb] Position
-        - [Button] Page down
-        - [Button] Line down
-      - [ScrollBar] Horizontal
-        - [Button] Column left
-        - [Thumb] Position
-        - [Button] Page right
-        - [Button] Column right
-      - [Thumb] (disabled)
-  #62 [Pane] (bounds: [0,-8,1367,148], focusable)
-  #63 [StatusBar] (bounds: [0,741,1367,27], focusable)
-    #64 [Pane] (bounds: [1175,744,191,23], focusable)
-      - [Text] 100%
-      #65 [Button] Zoom out (bounds: [1221,744,23,23], focusable)
-      #66 [Slider] Zoom slider (bounds: [1243,744,101,23], focusable)
-        - [Button] Page left
-        - [Thumb] Position
-        - [Button] Page right
-      #67 [Button] Zoom in (bounds: [1343,744,23,23], focusable)
-    - [Text] 765, 216‏px
-    - [Text]
-    - [Text] 1360 × 605‏px
-    - [Text]
-    - [Text]
-    - [Text]
-  #68 [TitleBar] (bounds: [16,-5,1351,32], focusable)
-    #69 [MenuBar] System (bounds: [0,0,23,23], focusable)
-      #70 [MenuItem] System (bounds: [0,0,23,23], focusable)
+#1 [Window] Untitled - Paint (bounds: [-7,-7,1551,879], focusable)
+  #2 [Pane] (bounds: [0,23,1537,842], focusable)
+    - [Pane] (focused)
+      - [Custom]
+        - [MenuBar]
+          #3 [MenuItem] File (bounds: [4,27,47,33], focusable)
+          #4 [MenuItem] Edit (bounds: [58,27,49,33], focusable)
+          #5 [MenuItem] View (bounds: [114,27,56,33], focusable)
+        #6 [Button] Save (bounds: [182,27,33,33], focusable)
+        #7 [Button] Share (bounds: [226,27,33,33], focusable)
+        #8 [Button] Undo (bounds: [271,27,33,33], focusable)
+        - [Button] Redo (disabled)
+        #9 [Button] What's new (bounds: [1432,27,33,33], focusable)
+        #10 [Button] Sign in (bounds: [1468,27,33,33], focusable)
+        #11 [Button] Open settings (bounds: [1500,27,33,33], focusable)
+        - [Group]
+          - [Pane]
+            - [Group] Selection
+              #12 [RadioButton] Select (bounds: [22,82,41,55], focusable)
+                - [Image]
+            - [Group] Image
+              - [Button] Crop (disabled)
+              #13 [Button] Remove background (bounds: [98,113,33,33], focusable)
+                - [Image]
+              #14 [Button] Rotate (bounds: [138,73,55,33], focusable)
+                - [Image]
+              #15 [Button] Flip (bounds: [138,113,55,33], focusable)
+                - [Image]
+              #16 [Button] Resize and skew (bounds: [199,93,33,33], focusable)
+                - [Image]
+            - [Group] Tools
+              #17 [Button] Pencil (bounds: [256,73,33,33], focusable)
+                - [Image]
+              #18 [Button] Fill (bounds: [296,73,33,33], focusable)
+                - [Image]
+              #19 [Button] Text (bounds: [336,73,33,33], focusable)
+                - [Image]
+              #20 [Button] Eraser (bounds: [256,113,33,33], focusable)
+                - [Image]
+              #21 [Button] Color picker (bounds: [296,113,33,33], focusable)
+                - [Image]
+              #22 [Button] Magnifier (bounds: [336,113,33,33], focusable)
+                - [Image]
+            - [Group] Brushes
+              #23 [RadioButton] Brushes (bounds: [398,82,41,55], focusable)
+                - [Image]
+            - [Group] Shapes
+              - [List]
+                - [ListItem] Line
+                  #24 [Button] Line (bounds: [471,74,21,21], focusable)
+                    - [Image]
+                - [ListItem] Curve
+                  #25 [Button] Curve (bounds: [494,74,21,21], focusable)
+                    - [Image]
+                - [ListItem] Oval
+                  #26 [Button] Oval (bounds: [516,74,21,21], focusable)
+                    - [Image]
+                - [ListItem] Rectangle
+                  #27 [Button] Rectangle (bounds: [538,74,21,21], focusable)
+                    - [Image]
+                - [ListItem] Rounded rectangle
+                  #28 [Button] Rounded rectangle (bounds: [561,74,21,21], focusable)
+                    - [Image]
+                - [ListItem] Polygon
+                  #29 [Button] Polygon (bounds: [583,74,21,21], focusable)
+                    - [Image]
+                - [ListItem] Triangle
+                  #30 [Button] Triangle (bounds: [606,74,21,21], focusable)
+                    - [Image]
+                - [ListItem] Right triangle
+                  #31 [Button] Right triangle (bounds: [471,97,21,20], focusable)
+                    - [Image]
+                - [ListItem] Diamond
+                  #32 [Button] Diamond (bounds: [494,97,21,20], focusable)
+                    - [Image]
+                - [ListItem] Pentagon
+                  #33 [Button] Pentagon (bounds: [516,97,21,20], focusable)
+                    - [Image]
+                - [ListItem] Hexagon
+                  #34 [Button] Hexagon (bounds: [538,97,21,20], focusable)
+                    - [Image]
+                - [ListItem] Right arrow
+                  #35 [Button] Right arrow (bounds: [561,97,21,20], focusable)
+                    - [Image]
+                - [ListItem] Left arrow
+                  #36 [Button] Left arrow (bounds: [583,97,21,20], focusable)
+                    - [Image]
+                - [ListItem] Up arrow
+                  #37 [Button] Up arrow (bounds: [606,97,21,20], focusable)
+                    - [Image]
+                - [ListItem] Down arrow
+                  #38 [Button] Down arrow (bounds: [471,119,21,21], focusable)
+                    - [Image]
+                - [ListItem] Four-point star
+                  #39 [Button] Four-point star (bounds: [494,119,21,21], focusable)
+                    - [Image]
+                - [ListItem] Five-point star
+                  #40 [Button] Five-point star (bounds: [516,119,21,21], focusable)
+                    - [Image]
+                - [ListItem] Six-point star
+                  #41 [Button] Six-point star (bounds: [538,119,21,21], focusable)
+                    - [Image]
+                - [ListItem] Rounded rectangular callout
+                  #42 [Button] Rounded rectangular callout (bounds: [561,119,21,21], focusable)
+                    - [Image]
+                - [ListItem] Oval callout
+                  #43 [Button] Oval callout (bounds: [583,119,21,21], focusable)
+                    - [Image]
+                - [ListItem] Cloud callout
+                  #44 [Button] Cloud callout (bounds: [606,119,21,21], focusable)
+                    - [Image]
+                - [ListItem] Heart
+                  #45 [Button] Heart (bounds: [471,142,21,7], focusable)
+                    - [Image]
+                - [ListItem] Lightning
+                  #46 [Button] Lightning (bounds: [494,142,21,7], focusable)
+                    - [Image]
+              - [Button] Shape outline (disabled)
+              - [Button] Shape fill (disabled)
+              - [Button] Size (disabled)
+                - [Image]
+            - [Group] Colors
+              #47 [RadioButton] Color 1: Black (bounds: [757,71,37,37], focusable)
+              #48 [RadioButton] Color 2: White (bounds: [757,110,37,37], focusable)
+              - [List]
+                #49 [ListItem] Black (bounds: [799,72,25,25], focusable)
+                #50 [ListItem] Gray (bounds: [823,72,25,25], focusable)
+                #51 [ListItem] Dark red (bounds: [847,72,25,25], focusable)
+                #52 [ListItem] Red (bounds: [871,72,25,25], focusable)
+                #53 [ListItem] Orange (bounds: [895,72,25,25], focusable)
+                #54 [ListItem] Yellow (bounds: [919,72,25,25], focusable)
+                #55 [ListItem] Green (bounds: [943,72,25,25], focusable)
+                #56 [ListItem] Turquoise (bounds: [967,72,25,25], focusable)
+                #57 [ListItem] Indigo (bounds: [991,72,25,25], focusable)
+                #58 [ListItem] Purple (bounds: [1015,72,25,25], focusable)
+                #59 [ListItem] White (bounds: [799,96,25,25], focusable)
+                #60 [ListItem] Light gray (bounds: [823,96,25,25], focusable)
+                #61 [ListItem] Brown (bounds: [847,96,25,25], focusable)
+                #62 [ListItem] Rose (bounds: [871,96,25,25], focusable)
+                #63 [ListItem] Gold (bounds: [895,96,25,25], focusable)
+                #64 [ListItem] Light yellow (bounds: [919,96,25,25], focusable)
+                #65 [ListItem] Lime (bounds: [943,96,25,25], focusable)
+                #66 [ListItem] Light turquoise (bounds: [967,96,25,25], focusable)
+                #67 [ListItem] Blue-gray (bounds: [991,96,25,25], focusable)
+                #68 [ListItem] Lavender (bounds: [1015,96,25,25], focusable)
+              #69 [Button] Edit colors (bounds: [1047,89,41,41], focusable)
+                - [Image]
+            - [Group] Copilot
+              #70 [Button] Copilot (bounds: [1120,86,35,47], focusable)
+            - [Group] Layers
+              #71 [Button] (bounds: [1186,89,41,41], focusable)
+                - [Image]
+          #72 [Button] Toolbar options (bounds: [1510,151,23,22], focusable)
+        #73 [Pane] (bounds: [0,178,1537,647], focused, focusable)
+          - [Group] Using Brush tool on Canvas
+          - [ScrollBar] Vertical
+            - [Button] Vertical Small Decrease
+            - [Button] Vertical Large Decrease
+            - [Button] Vertical Large Increase
+            - [Button] Vertical Small Increase
+        #74 [Slider] Size (bounds: [16,241,34,244], focusable)
+        #75 [Slider] Opacity (bounds: [16,544,34,245], focusable)
+        - [Text] 1547 × 1647px
+        #76 [Button] Fit to window (bounds: [1184,831,39,27], focusable)
+        #77 [ComboBox] Zoom (bounds: [1226,824,101,41], focusable)
+          #78 [Edit] Zoom (bounds: [0,0,1,1], focusable)
+        #79 [Button] Zoom out (bounds: [1330,834,33,21], focusable)
+        #80 [Slider] Zoom (bounds: [1366,828,131,34], focusable)
+        #81 [Button] Zoom in (bounds: [1500,834,33,21], focusable)
+  #82 [TitleBar] (bounds: [16,-5,1521,29], focusable)
+    #83 [MenuBar] System (bounds: [0,0,23,23], focusable)
+      #84 [MenuItem] System (bounds: [0,0,23,23], focusable)
     - [Button] Minimize
     - [Button] Restore
     - [Button] Close
